@@ -1,14 +1,17 @@
 body,
     html {
         background-image: url(./img/background/trees_sky_background.jpg);
-        color: white;
-        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        font-family: 'Major Mono Display', monospace !important;
         text-align: center;
-        text-transform: uppercase;
     }
 
     h1 {
-        font-size: 42px
+        font-size: 42px;
+        margin: 0vw;
+    }
+    h2{
+        margin: 0vw;
     }
 
     .cell {
@@ -19,5 +22,20 @@ body,
         display: inline-block;
         margin: 10px;
         font-size: 40px;
-        font-weight: bold;
+        border-radius: 10%;
     }
+#title {
+    max-width: fit-content;
+    margin: 10px auto;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: rgba(141, 170, 127, 0.678);
+}
+
+#gridBG {
+    max-width: fit-content;
+    margin: 10px auto;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: rgba(141, 170, 127, 0.575);
+}
