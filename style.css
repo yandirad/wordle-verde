@@ -17,17 +17,18 @@ body,
     }
 
     .cell {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        border: 1px solid #aaa;
+        width: 6.5vh;
+        height: 6.5vh;
+        line-height: 6.5vh;
+        border: 1px solid rgb(56, 56, 56);
         display: inline-block;
-        margin: 10px;
-        font-size: 40px;
+        margin: 1vh;
+        font-size: 4vh;
         border-radius: 10%;
     }
 #title {
-    max-width: fit-content;
+    max-height: 8vh;
+    max-width: 65vh;
     margin: 10px auto;
     border-radius: 1em;
     padding: 1em;
@@ -35,14 +36,25 @@ body,
 }
 
 #gridBG {
-    max-width: fit-content;
+    max-height: 55vh;
+    max-width: 65vh;
     margin: 10px auto;
     border-radius: 1em;
     padding: 1em;
     background-color: rgba(141, 170, 127, 0.575);
 }
 
+#keyboard{
+    max-height: 30vh;
+}
+
 .button{
-    height: 5rem;
-    width: 5rem;
+    height: 8vh;
+    width: 8vh;
+    margin: 0.2vh;
+}
+.buttonSp{
+    height: 8vh;
+    width: 12vh;
+    margin: 0.2vh;
 }
