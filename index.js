@@ -88,7 +88,7 @@ function drawAttempt(row, attempt, isCurrent) {
             cell.innerHTML = '<div style="opacity: 0">X</div>'
         }
         if (isCurrent) {
-            cell.style.backgroundColor = '#111'
+            cell.style.backgroundColor = '#d5e1d0'
         } else {
             cell.style.backgroundColor = getBgColor(attempt, i)
         }
@@ -102,7 +102,7 @@ function getBgColor(attempt, i) {
         attemptLetter === undefined ||
         secret.indexOf(attemptLetter) === -1
     ) {
-        return '#212121'
+        return '#5c5c5c'
     }
     if (correctLetter === attemptLetter) {
         return '#538d4e'
