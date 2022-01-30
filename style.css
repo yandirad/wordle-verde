@@ -41,3 +41,8 @@ body,
     padding: 1em;
     background-color: rgba(141, 170, 127, 0.575);
 }
+
+.button{
+    height: 5rem;
+    width: 5rem;
+}

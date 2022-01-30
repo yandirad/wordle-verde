@@ -109,3 +109,9 @@ function getBgColor(attempt, i) {
     }
     return '#b59f3b'
 }
+
+function press(letter){
+    window.dispatchEvent(new KeyboardEvent('keydown', {'key': letter}));
+}
+
+
