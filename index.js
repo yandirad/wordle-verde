@@ -47,7 +47,7 @@ function handleKeyDown(e) {
         currentAttempt = ''
     } else if (letter === 'backspace') {
         currentAttempt = currentAttempt.slice(0, currentAttempt.length - 1)
-    } else if (/[a-z]/.test(letter)) {
+    } else if (/[a-zñ]/.test(letter)) {
         if (currentAttempt.length < secret.length) {
             currentAttempt += letter
         }
@@ -56,7 +56,7 @@ function handleKeyDown(e) {
 }
 
 function buildGrid() {
-    for (let i = 0; i < ((secret.length)+1); i++) {
+    for (let i = 0; i < secret.length; i++) {
         let row = document.createElement('div')
         for (let j = 0; j < (secret.length); j++) {
             let cell = document.createElement('div')
@@ -84,7 +84,6 @@ function drawAttempt(row, attempt, isCurrent) {
         if (attempt[i] !== undefined) {
             cell.textContent = attempt[i]
         } else {
-            // lol
             cell.innerHTML = '<div style="opacity: 0">X</div>'
         }
         if (isCurrent) {
